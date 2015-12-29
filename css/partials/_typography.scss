@@ -1,0 +1,60 @@
+
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+	font-family: $font-sans-header;
+	font-weight: $normal;
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 1.25;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 16px;
+	font-family: $font-serif-body;
+}
+
+
+body {
+  font-family: $font-serif-body;
+  text-align: center;
+}
+
+i {
+	margin-right: 8px;
+}
+
+.strong {
+	font-weight: $semi-bold;
+}
+
+ul.diamond {
+	margin: 0;
+	padding: 0 1em;
+	list-style: none;
+
+	li:before { 
+		position: relative;
+	  content: "";    
+	  display: block;
+	  height: 4px;
+	  width: 4px; 
+	  @include rotateShape(45deg);
+	  border: 1px solid $fresh-lawn;
+	  left: -1em;
+	  top: 0.9em;
+	 }
+}

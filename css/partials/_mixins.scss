@@ -1,0 +1,131 @@
+// Media queries 
+@mixin bp1 { // Smartphones (portrait & landscape)
+  @media only screen 
+  and (min-width: 320px) 
+  and (max-width: 767px) 
+  {
+    @content; 
+  }	
+}
+
+@mixin bp2 { // Tablets
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin bp3 { // The largey stuff
+  @media only screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexIt($value) {
+	-webkit-box-flex: $value;             
+  -webkit-flex: $value;                 
+  -ms-flex: $value;                    
+  flex: $value;	
+}
+
+@mixin flexwrap($wrap) {
+	flex-wrap: $wrap;
+	-ms-flex-wrap: $wrap;                   
+	-webkit-flex-wrap: $wrap;	
+}
+
+@mixin flexDirection($direction) {         
+	-ms-flex-direction: $direction;         
+	-webkit-flex-direction: $direction;     
+	flex-direction: $direction;
+}
+
+@mixin justifyContent($alignment) {
+  -webkit-justify-content: $alignment;
+  justify-content: $alignment;    
+}
+
+@mixin alignContent($alignment) {
+	-webkit-align-items: $alignment;
+	align-items: $alignment;
+}
+
+@mixin alignSelf($align-self) {            
+    -webkit-align-self: $align-self;       
+    -ms-align-self: $align-self;           
+    align-self: $align-self;
+}
+
+@mixin gradient($firstColor, $secColor, $stopPos) {
+	background: -webkit-linear-gradient(140deg, $firstColor $stopPos, $secColor); 
+	background: -o-linear-gradient(bottom right, $firstColor $stopPos, $secColor);
+	background: -moz-linear-gradient(bottom right, $firstColor $stopPos, $secColor);
+	background: linear-gradient(to bottom right, $firstColor $stopPos, $secColor);
+}
+
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin defaultButton($bg, $textcol, $bordercol) {
+	border: 2px solid $bordercol;
+	background-color: $bg;
+	@include rounded(3px);
+	padding: 8px 20px;
+	font-size: 13px;
+	color: $textcol;
+	text-decoration: none;	
+}
+
+@mixin transitionEaseIn($object, $duration) {
+			    transition: $object $duration ease-in-out;
+     -moz-transition: $object $duration ease-in-out;
+  -webkit-transition: $object $duration ease-in-out;
+}
+
+@mixin caseStudyCover($bgImage, $bgPosition) {
+	background-color: darken($magenta, 45%);
+  position: relative;
+  @include transitionEaseIn(background, .25s);
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .12;
+    content: '';
+    display: block;
+    background: $magenta url('#{$imgpath}/#{$bgImage}') no-repeat center $bgPosition;
+    background-size: 100%;  
+  }
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+@mixin shadow($horz: 0, $vert: 0, $blur: 8px, $spread: 2px, $color: rgba(0, 0, 0, 0.1)) {
+  -moz-box-shadow:    $horz $vert $blur $spread $color;
+  -webkit-box-shadow: $horz $vert $blur $spread $color;
+  box-shadow:         $horz $vert $blur $spread $color;
+}
+
+@mixin rotateShape($deg: -45deg) {
+  -moz-transform:    rotate($deg);
+  -webkit-transform: rotate($deg);
+  -ms-transform:     rotate($deg);
+  -o-transform:      rotate($deg);
+
+}

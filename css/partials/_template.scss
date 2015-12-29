@@ -1,0 +1,48 @@
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+header.wrapper {
+  height: 550px;
+}
+
+#home .main-container {
+  background-color: $offblack;
+  color: #fff;
+}
+
+.main {
+	padding: 30px 0;
+}
+
+
+#cr-logo {
+	display: block;	
+  background: url('#{$imgpath}/logo-cr-white.svg') no-repeat; 
+  width: 46px;
+  height: 46px;    
+  margin: 30px auto 0;  
+}
+
+.btn-primary {
+	@include defaultButton(none, $lightergray, $lightergray);
+	@include transitionEaseIn(background, .25s);
+
+
+	&:hover {
+		background-color: $lemon;
+		color: $darkgray;
+		border-color: $lemon;
+	}
+
+	&:active {
+		background-color: darken($lemon, 15%);
+	}
+}
+
+ 
+.disabled-link, .disabled-link:hover {
+	color: $lightgray;
+}

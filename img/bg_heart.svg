@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="327px" height="283px" viewBox="0 0 327 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>heart13</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="v1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Landing-page" sketch:type="MSArtboardGroup" transform="translate(-349.000000, -2284.000000)" fill="#F4BABA">
+            <g id="Special-thanks" sketch:type="MSLayerGroup" transform="translate(30.000000, 2174.000000)">
+                <path d="M557.050235,110.528561 C525.302584,110.528561 497.576837,127.38946 482.086346,152.588595 C466.598335,127.38946 438.860183,110.528561 407.113359,110.528561 C358.492403,110.528561 319.088,149.942061 319.088,198.563844 C319.088,225.034969 330.81876,248.715655 349.30397,264.842968 L474.051636,389.597251 C476.183749,391.726056 479.071779,392.924439 482.086346,392.924439 C485.100086,392.924439 487.988943,391.726056 490.121056,389.597251 L614.868722,264.842968 C633.35724,248.715655 645.088,225.034969 645.088,198.563844 C645.088,149.942061 605.671191,110.528561 557.050235,110.528561 Z" id="heart13" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
