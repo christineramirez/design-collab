@@ -28,36 +28,36 @@
   display: flex;
 }
 
-@mixin flexIt($value) {
+@mixin flexIt($value) { //none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 	-webkit-box-flex: $value;             
   -webkit-flex: $value;                 
   -ms-flex: $value;                    
   flex: $value;	
 }
 
-@mixin flexwrap($wrap) {
+@mixin flexwrap($wrap) { // nowrap | wrap | wrap-reverse;
 	flex-wrap: $wrap;
 	-ms-flex-wrap: $wrap;                   
 	-webkit-flex-wrap: $wrap;	
 }
 
-@mixin flexDirection($direction) {         
+@mixin flexDirection($direction) { // row | row-reverse | column | column-reverse;    
 	-ms-flex-direction: $direction;         
 	-webkit-flex-direction: $direction;     
 	flex-direction: $direction;
 }
 
-@mixin justifyContent($alignment) {
+@mixin justifyContent($alignment) { // flex-start | flex-end | center | space-between | space-around;
   -webkit-justify-content: $alignment;
   justify-content: $alignment;    
 }
 
-@mixin alignContent($alignment) {
+@mixin alignItems($alignment) { // flex-start | flex-end | center | baseline | stretch;
 	-webkit-align-items: $alignment;
 	align-items: $alignment;
 }
 
-@mixin alignSelf($align-self) {            
+@mixin alignSelf($align-self) { // auto | flex-start | flex-end | center | baseline | stretch;            
     -webkit-align-self: $align-self;       
     -ms-align-self: $align-self;           
     align-self: $align-self;
@@ -90,30 +90,6 @@
 			    transition: $object $duration ease-in-out;
      -moz-transition: $object $duration ease-in-out;
   -webkit-transition: $object $duration ease-in-out;
-}
-
-@mixin caseStudyCover($bgImage, $bgPosition) {
-	background-color: darken($magenta, 45%);
-  position: relative;
-  @include transitionEaseIn(background, .25s);
-
-  &:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: .12;
-    content: '';
-    display: block;
-    background: $magenta url('#{$imgpath}/#{$bgImage}') no-repeat center $bgPosition;
-    background-size: 100%;  
-  }
-
-  &:hover {
-    background-color: #000;
-  }
 }
 
 @mixin shadow($horz: 0, $vert: 0, $blur: 8px, $spread: 2px, $color: rgba(0, 0, 0, 0.1)) {

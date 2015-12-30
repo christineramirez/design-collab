@@ -3,18 +3,18 @@ $lagoon-blue: #00A8C6;
 $egg-shell: #F9F2E7;
 $fresh-lawn: #8FBE00;
 
-$pink-love: #25002d;
+$pink-love: #EB8787;
 $lemon: #f3ea41;
 
 // Neutral colors
 $lightergray: #ccc;
-$lightgray: #b9b9b9;
-$darkgray-bg: #2f3032;
+$lightgray: lighten(#000, 55);
 $darkgray: #222;
 $offblack: #101010;
 
 // Base font
 $font-sans-header: "soleil", Helvetica, Arial, sans-serif;
+$font-sans-header2: "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
 $font-serif-body: "ff-tisa-web-pro", Georgia, Times, serif;
 
 //Font weights

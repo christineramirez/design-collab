@@ -1,29 +1,17 @@
-
 .wrapper {
   width: 90%;
   margin: 0 5%;
 }
 
-header.wrapper {
-  height: 550px;
-}
-
-#home .main-container {
-  background-color: $offblack;
-  color: #fff;
-}
-
-.main {
-	padding: 30px 0;
-}
-
-
-#cr-logo {
-	display: block;	
-  background: url('#{$imgpath}/logo-cr-white.svg') no-repeat; 
-  width: 46px;
-  height: 46px;    
-  margin: 30px auto 0;  
+a {
+  color: $fresh-lawn;
+  font-weight: $bold;
+  font-style: italic;
+  
+  &:hover {
+    @include transitionEaseIn(color, 0.3s);
+    color: $lagoon-blue; 
+  }
 }
 
 .btn-primary {
@@ -45,4 +33,24 @@ header.wrapper {
  
 .disabled-link, .disabled-link:hover {
 	color: $lightgray;
+}
+
+.bg-watermelon {
+  background: #fff url('#{$imgpath}/bg_watermelon.png') repeat;
+/*   background-size: 800px auto;  */
+}
+
+.bg-pineapples {
+  background: #fff url('#{$imgpath}/bg_pineapples.png') repeat;
+/*   background-size: 60%;  */
+}
+
+.bg-strawberries {
+  background: #fff url('#{$imgpath}/bg_strawberries.png') repeat;
+/*   background-size: 70%;  */
+}
+
+.bg-bananas {
+  background: #fff url('#{$imgpath}/bg_bananas.png') repeat;
+/*   background-size: 60%;  */
 }

@@ -1,0 +1,147 @@
+h2 {
+  margin-top: 8rem;
+}
+
+#dc-logo-lg {
+	float: left;
+	width: 50%;
+	height: 100%;
+  background: $lagoon-blue url('#{$imgpath}/logo_designcollab_temp.png') no-repeat center; 
+}
+
+#dc-mission {
+  float: right;
+  width: 40%;  
+  height: 100%;
+  background-color: $egg-shell;
+  display: table;
+  padding: 0 5%;
+  
+  .valign {
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2.2rem;
+    line-height: 1.5;    
+  }
+  
+  i {
+    width: 100%;
+    text-align: center;   
+    margin-top: 30px;
+  }
+}
+
+.event-wrapper {
+  @include flexbox;
+  @include flexwrap(nowrap);
+  @include justifyContent(center);
+  padding: 60px 0;
+  margin-bottom: 30px;
+
+}
+
+.speaker-info {
+  margin-right: 15px;
+  
+  img {
+    @include rounded(50%);
+    margin-bottom: 5px;
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.event-info {
+  margin-left: 15px;  
+  width: 50%;
+  
+  h3 {
+    margin: 0;
+    font-weight: $normal;
+    
+    span {
+      font-style: italic;
+      color: $lagoon-blue;
+      display: block;
+    }
+  }
+  
+  p {
+    text-align: justify;    
+    width: 85%;
+  }
+  
+  h5 {
+    margin: 0;
+  }
+}
+
+.speaker-elsewhere {
+  text-align: center;
+  @include flexbox();
+  @include justifyContent(space-around);
+  
+  a {
+  color: $lightgray;
+  
+    &:hover {
+      color: $fresh-lawn;
+    }
+    
+    i {
+      margin-right: 0;
+    }
+  }
+}
+
+.share-yours {
+  border: 3px solid $lagoon-blue;
+  padding: 6rem 0;
+  text-align: center;
+  margin: 6rem auto;
+  
+  h2 {
+    margin: 0 0 20px 0;
+  }
+  
+  p {
+    width: 40rem;
+    margin: 0 auto 2rem;
+  }
+}
+
+
+.special-thanks {
+  padding: 12rem 0 12rem;
+  background: $darkgray url('#{$imgpath}/bg_heart.svg') no-repeat center; 
+  background-size: 40rem;
+  text-align: center;
+  
+  h2 {
+    width: 25rem;
+    margin: 1rem auto 1rem;
+    color: $pink-love;
+  }
+
+  .friends-list {
+    @include flexbox();
+    @include justifyContent(space-around);
+  }
+  
+  ul {
+
+  }
+
+  li {
+    margin-bottom: .5rem;
+  }
+  
+  hr {
+    display: block;
+    border-top: 2px solid $pink-love;     
+    margin: 0;
+    
+  }
+
+}
