@@ -1,3 +1,51 @@
+.sticky-guy {
+  z-index: 50;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  
+  .dc-logo-sm {
+    background-color: $lagoon-blue;
+    width: 50%;
+    float: left;   
+    height: 100%;    
+    
+    img {
+      margin: 2rem auto 0;
+    } 
+  }
+  
+  .meetup {
+    background-color: $egg-shell;
+    width: 50%;
+    float: left;
+    height: 100%;
+
+    a {
+      display: block;
+      font-weight: normal;
+      color: $offblack;
+      font-size: 1.4rem;
+      line-height: 6rem;
+      width: 100%;
+      height: 100%;
+    }
+    
+    a:hover {
+      color: $lagoon-blue;
+    }
+    
+    i {
+      margin: 0 0 0 1rem;      
+    }
+    
+  }
+  
+}
+
 .wrapper {
   width: 90%;
   margin: 0 5%;
@@ -5,7 +53,6 @@
 
 a {
   color: $fresh-lawn;
-  font-weight: $bold;
   font-style: italic;
   
   &:hover {

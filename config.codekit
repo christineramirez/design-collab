@@ -164,6 +164,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/css\/vendor\/jquery.fullPage.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/vendor\/jquery.fullPage.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/vendor\/normalize.min.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -213,6 +222,17 @@
 		"initialSize": 823262,
 		"inputAbbreviatedPath": "\/img\/bg_watermelon.png",
 		"outputAbbreviatedPath": "\/img\/bg_watermelon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo_designcollab_sm_temp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5061,
+		"inputAbbreviatedPath": "\/img\/logo_designcollab_sm_temp.png",
+		"outputAbbreviatedPath": "\/img\/logo_designcollab_sm_temp.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

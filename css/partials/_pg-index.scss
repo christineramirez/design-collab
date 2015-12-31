@@ -9,6 +9,10 @@ h2 {
   background: $lagoon-blue url('#{$imgpath}/logo_designcollab_temp.png') no-repeat center; 
 }
 
+.section {
+  z-index: 100;
+}
+
 #dc-mission {
   float: right;
   width: 40%;  
@@ -74,6 +78,10 @@ h2 {
   
   h5 {
     margin: 0;
+  }
+  
+  a {
+    font-weight: $bold;
   }
 }
 

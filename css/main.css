@@ -45,13 +45,45 @@ textarea {
 a {
   text-decoration: none; }
 
+.sticky-guy {
+  z-index: 50;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center; }
+  .sticky-guy .dc-logo-sm {
+    background-color: #00A8C6;
+    width: 50%;
+    float: left;
+    height: 100%; }
+    .sticky-guy .dc-logo-sm img {
+      margin: 2rem auto 0; }
+  .sticky-guy .meetup {
+    background-color: #F9F2E7;
+    width: 50%;
+    float: left;
+    height: 100%; }
+    .sticky-guy .meetup a {
+      display: block;
+      font-weight: normal;
+      color: #101010;
+      font-size: 1.4rem;
+      line-height: 6rem;
+      width: 100%;
+      height: 100%; }
+    .sticky-guy .meetup a:hover {
+      color: #00A8C6; }
+    .sticky-guy .meetup i {
+      margin: 0 0 0 1rem; }
+
 .wrapper {
   width: 90%;
   margin: 0 5%; }
 
 a {
   color: #8FBE00;
-  font-weight: 700;
   font-style: italic; }
   a:hover {
     transition: color 0.3s ease-in-out;
@@ -995,6 +1027,9 @@ h2 {
   height: 100%;
   background: #00A8C6 url("../img/logo_designcollab_temp.png") no-repeat center; }
 
+.section {
+  z-index: 100; }
+
 #dc-mission {
   float: right;
   width: 40%;
@@ -1052,6 +1087,8 @@ h2 {
     width: 85%; }
   .event-info h5 {
     margin: 0; }
+  .event-info a {
+    font-weight: 700; }
 
 .speaker-elsewhere {
   text-align: center;
