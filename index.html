@@ -10,116 +10,163 @@
         <link rel="stylesheet" href="css/vendor/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/vendor/jquery.fullPage.css">
+        <link rel="icon" type="image/png" href="favicon.png" />
 
         <script src="https://use.typekit.net/rah0zye.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-        
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-      <div class="header-container">
-        <header class="wrapper clearfix">
-          <div class="dc-logo"></div>
-          <div class="dc-mission">
-            <p>design collab is a monthly meetup for designers of all disciplines looking for great company and conversation.</p>
-            <p>This community aims to support designers' growth within a tight-knit and supportive community by sharing experiences over a beer or two.</p>
-          </div>            
-        </header>
-      </div> <!--end .header-container -->
-      
-      <div class="schedule">
-        <h2>2016 Schedule</h2>
+      <header class="sticky-guy visuallyhidden">
+        <div class="dc-logo-sm"><img src="img/logo_designcollab_sm.svg" alt="design collab"/></div>
+        <div class="meetup">
+          <a href="" target="_blank">Join us on meetup.com<i class="fa fa-angle-right"></i></a>
+        </div>
 
-        <div class="event-wrapper">
-          <!-- Lacey Ankenman -->
-          <div class="speaker-info"> 
-            <div class="speaker-img"><img src="img/speaker_lacey.jpeg" alt="Lacey Ankenman" title="Lacey Ankenman" width="113" height="113"></div>
-            <p class="speaker-elsewhere">
-              <a href="https://twitter.com/laceydesign" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>  
-              <a href="https://www.linkedin.com/in/lacey-ankenman-29392252" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a>              
-              <a href="http://www.laceydesign.com/" target="_blank"><i class="fa fa-link" title="Personal Site"></i></a>               
-              <a href="mailto:"><i class="fa fa-envelope" title="Email"></i></a>            
-            </p>    
-          </div> 
-          <div class="event-info"></div>
-            <h3>Kickstarting the Design Process<span>with Lacey</span></h3>
-            <h4>Thursday, January 21&nbsp;  |&nbsp;  <a href="https://goo.gl/maps/64DgXDPFznH2" target="_blank">Galvanize - Boulder, CO</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>
-            <h5>About Lacey</h5>
-            <p>Lacey Ankenman is a graphic designer specializing in web design and branding based in Boulder, Colorado. Collector of elegant interactions, thoughtful workflows, diligent doodles, and plentiful white space. Lacey is a designer, dog lover, NPR podcast addict, latin music groover, and a shameless desk-dancer.</p>         
-          </div>     
-          
-          <!-- Ben Tremper -->  
-          <div class="speaker-info"> 
-            <div class="speaker-img"><img src="img/speaker_tremper.jpeg" alt="Ben Tremper" title="Ben Tremper" width="113" height="113"></div>
-            <p class="speaker-elsewhere">
-              <a href="https://twitter.com/bentremper?lang=en" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>  
-              <a href="https://www.linkedin.com/in/bentremper" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a>              
-              <a href="www.bentremper.com/" target="_blank"><i class="fa fa-link" title="Personal Site"></i></a>               
-              <a href="mailto:bentremper@gmail.com"><i class="fa fa-envelope" title="Email"></i></a>            
-            </p>            
-          </div> 
-          <div class="event-info"></div>
-            <h3>Bending Sketch To Your Will<span>with Ben</span></h3>
-            <h4>Thursday, February 18&nbsp;  |&nbsp;  <a href="https://goo.gl/maps/AsEV33Cbn8H2" target="_blank">Tremper Studio - Boulder, CO</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>
-            <h5>About Ben</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>         
+      </header>
+
+      <div id="fullpage">
+        <header class="section">
+          <div id="dc-logo-lg"></div>
+          <div id="dc-mission">
+            <div class="valign">
+              <p>design collab is a <a href="http://www.meetup.com/designcollab/" target="_blank">monthly meetup</a> for designers of all disciplines looking for great company and conversation.</p>
+              <p>This community aims to support designers' growth within a tight-knit and supportive community by sharing experiences over a beer or two.</p>
+              <a href="#schedule-list"><i class="fa fa-angle-down fa-3x"></i></a>
+              </div>
           </div>
-          
-          <!-- Brian Haveri -->  
-          <div class="speaker-info"> 
-            <div class="speaker-img"><img src="img/speaker_brian.png" alt="Brian Haveri" title="Brian Haveri" width="113" height="113"></div>
-            <p class="speaker-elsewhere">
-              <a href="https://twitter.com/brianhaveri" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>  
-              <a href="https://www.linkedin.com/in/haveri" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a>              
-              <a href="#" target="_blank"><i class="fa fa-link" title="Personal Site"></i></a>               
-              <a href="mailto:"><i class="fa fa-envelope" title="Email"></i></a>            
-            </p>            
-          </div> 
-          <div class="event-info"></div>
-            <h3>Title TBD :)<span>with Brian</span></h3>
-            <h4>Thursday, March 17&nbsp;  |&nbsp;  TBD</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>
-            <h5>About Brian</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>         
-          </div>           
-        </div><!--end .event-wrapper -->        
-      </div><!--end .schedule -->
-      <div class="share-yours">
-        <h2>Share Your Experience</h2>
-        <p>We encourage designers at all stages of their career to share their experiences with the community.</p>
-        <p>If you’d like to speak at a design collab event, email Liz and Christine at: <a href="mailto:info@designcollab.co">info@designcollab.co</a>. </p>        
-      </div>  
-      
-      <div class="special-thanks">
-        <h2>A very special thanks to our friends</h2>
-        <hr />
-        <ul>
-          <li>Chris Alvarez</li>
-          <li>Mike Julian</li>
-          <li>Amy Tremper</li>
-          <li>Ben Tremper</li>
-        </ul>     
-        <hr />         
-      </div>
+        </header>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
-      
-      <script>
-          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='https://www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-71807936-1','auto');ga('send','pageview');
-      </script>
+        <div class="schedule">
+          <h2 id="schedule-list">Upcoming Events</h2>
+          <!-- Lacey Ankenman -->
+          <div class="event-wrapper">
+            <div class="speaker-info">
+              <div class="speaker-img"><img src="img/speaker_lacey.jpeg" alt="Lacey Ankenman" title="Lacey Ankenman" width="113" height="113"></div>
+              <ul class="speaker-elsewhere">
+                <li><a href="https://twitter.com/laceydesign" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a>  </li>
+                <li><a href="https://www.linkedin.com/in/lacey-ankenman-29392252" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
+                <li><a href="http://www.laceydesign.com/" target="_blank"><i class="fa fa-link" title="Personal Site"></i></a>
+                <!-- <li><a href="mailto:"><i class="fa fa-envelope" title="Email"></i></a></li> -->
+              </ul>
+            </div>
+            <div class="event-info">
+              <h3>More than Moodboards <span>with Lacey</span></h3>
+
+              <h4>6:30pm&nbsp;  |&nbsp; Thursday, January 21&nbsp;  |&nbsp;  <a href="https://goo.gl/maps/64DgXDPFznH2" target="_blank">Galvanize - Boulder, CO</a></h4>
+
+              <p>A blank canvas can be both exhilarating and terrifying. With increasingly tight timelines and limitless visual and interactive options, how do you create a unique visual style for a client while hitting deadlines and staying on budget?</p>
+
+              <p>Lacey will share her design process that illustrates the benefits of her approach at <a href="http://www.vermilion.com/" target="_blank">Vermilion </a> &mdash;  and show some false starts and discoveries that were made along the way.</p>
+
+              <p><a href="http://www.meetup.com/designcollab/events/227316081/" target="_blank" class="btn-register"><i class="fa fa-angle-right">  </i>Register on meetup.com</a></p>
+
+              <hr />
+              <h5>About Lacey</h5>
+              <p class="clear-margin-top"><a href="http://www.laceydesign.com/" target="_blank">Lacey Ankenman</a> is a senior designer and web design nerd at <a href="http://www.vermilion.com/" target="_blank">Vermilion</a> in Boulder. She works on a little bit of everything, but especially loves building meaningful brands and and bringing them to life in the digital space. Lacey is an advocate for close collaboration among UX, design, and development, and she aims to create simple, engaging web experiences.</p>
+
+            </div>
+          </div>
+
+          <!-- Ben Tremper -->
+          <div class="event-wrapper">
+            <div class="speaker-info">
+              <div class="speaker-img"><img src="img/speaker_tremper.jpeg" alt="Ben Tremper" title="Ben Tremper" width="113" height="113"></div>
+              <ul class="speaker-elsewhere">
+                <li><a href="https://twitter.com/bentremper?lang=en" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/bentremper" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
+                <li><a href="http://www.bentremper.com/" target="_blank"><i class="fa fa-link" title="Personal Site"></i></a></li>
+                <!-- <li><a href="mailto:bentremper@gmail.com"><i class="fa fa-envelope" title="Email"></i></a></li> -->
+              </ul>
+            </div>
+            <div class="event-info">
+              <h3>Using Sketch to Design Better Products <span>with Ben</span></h3>
+              <h4>6:00pm&nbsp;  |&nbsp; Thursday, February 18&nbsp;  |&nbsp;  <a href="https://goo.gl/maps/AsEV33Cbn8H2" target="_blank">Tremper Studio - Boulder, CO</a></h4>
+
+              <p>How do we as designers move more quickly from talking to doing?</p>
+
+              <p>In this session, Ben will demonstrate how he harnesses the power of Sketch 3 to speed up workflow and produce more awesome UX / UI deliverables.</p>
+
+              <p>This is intended to be a working session. Feel free to bring your laptops if you'd like to follow along.</p>
+
+              <p><a href="http://www.meetup.com/designcollab/events/227975024/" target="_blank" class="btn-register"><i class="fa fa-angle-right">  </i>Register on meetup.com</a></p>
+
+              <hr />
+              <h5>About Ben</h5>
+              <p class="clear-margin-top"><a href="http://www.bentremper.com/" target="_blank">Ben Tremper</a> is a user experience / user interface designer. He creates human-centered digital experiences and content for websites, web apps and mobile apps. He works with agencies, brands, startups and teams to create products and experiences that balance thoughtful interactivity with powerful visuals. When he's not designing, you can find him enjoying the beautiful state of Colorado – he's an avid fly fisherman, mountain biker, skier and general man of the mountains.</p>
+            </div>
+          </div>
+
+          <!-- Brian Haveri -->
+          <!-- <div class="event-wrapper bg-strawberries">
+            <div class="speaker-info">
+              <div class="speaker-img"><img src="img/speaker_brian.png" alt="Brian Haveri" title="Brian Haveri" width="113" height="113"></div>
+                <ul class="speaker-elsewhere">
+                  <li><a href="https://twitter.com/brianhaveri" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/haveri" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-link" title="Personal Site"></i></a></li>
+                  <li><a href="mailto:"><i class="fa fa-envelope" title="Email"></i></a></li>
+                </ul>
+              </div>
+              <div class="event-info">
+                <h3 class="tbd-event">Event theme is currently baking.</h3>
+                <h4>Thursday, March 24&nbsp;  |&nbsp;  TBD</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>
+                <h5>About Brian</h5>
+                <p class="clear-margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis placerat lacus eget cursus. Suspendisse hendrerit aliquet faucibus.</p>
+              </div>
+          </div> --><!--end .event-wrapper -->
+        </div><!--end .schedule -->
+        <div class="share-yours">
+          <h2>Share Your Experience</h2>
+          <p>We encourage designers at all stages of their career to share their experiences with the community.</p>
+          <p>If you’d like to share what you've learned , <br />email <a href="http://www.twitter.com/stylefunky" target="_blank">Christine</a> at <a href="mailto:me@christineramirez.com">me[at]christineramirez.com</a>. </p>
+        </div>
+
+        <div class="special-thanks">
+          <h2>A <span class="italic">very special</span> thanks to our friends</h2>
+          <div class="friends-list">
+            <hr />
+            <ul>
+              <li>Chris Alvarez</li>
+              <li>Mike Julian</li>
+              <li>Amy Tremper</li>
+              <li>Ben Tremper</li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+    </div><!--end #fullpage -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/vendor/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+        responsiveHeight: 600,
+        autoScrolling: false,
+        fitToSection: false
+        });
+      });
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-71807936-1','auto');ga('send','pageview');
+    </script>
     </body>
 </html>

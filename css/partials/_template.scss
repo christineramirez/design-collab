@@ -1,35 +1,73 @@
+body {
+  background-color: lighten($egg-shell, 4%);
+  line-height: 1.5;
+}
+
+.sticky-guy {
+  z-index: 50;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: 0.2s top cubic-bezier(.3,.73,.3,.74);
+
+  .dc-logo-sm {
+    background-color: $lagoon-blue;
+    width: 50%;
+    float: left;
+    height: 100%;
+
+    img {
+      margin: 2rem auto 0;
+    }
+  }
+
+  .meetup {
+    background-color: $egg-shell;
+    width: 50%;
+    float: left;
+    height: 100%;
+
+    a {
+      display: block;
+      font-weight: normal;
+      color: $offblack;
+      font-size: 1.4rem;
+      line-height: 6rem;
+      width: 100%;
+      height: 100%;
+    }
+
+    a:hover {
+      color: $lagoon-blue;
+    }
+
+    i {
+      margin: 0 0 0 1rem;
+    }
+  }
+}
 
 .wrapper {
   width: 90%;
   margin: 0 5%;
 }
 
-header.wrapper {
-  height: 550px;
-}
+a {
+  color: $fresh-lawn;
+  font-style: italic;
 
-#home .main-container {
-  background-color: $offblack;
-  color: #fff;
-}
-
-.main {
-	padding: 30px 0;
-}
-
-
-#cr-logo {
-	display: block;	
-  background: url('#{$imgpath}/logo-cr-white.svg') no-repeat; 
-  width: 46px;
-  height: 46px;    
-  margin: 30px auto 0;  
+  &:hover {
+    @include transitionEaseIn(color, 0.3s);
+    color: $lagoon-blue;
+  }
 }
 
 .btn-primary {
-	@include defaultButton(none, $lightergray, $lightergray);
+	@include defaultButton(none, gold, gold);
 	@include transitionEaseIn(background, .25s);
-
 
 	&:hover {
 		background-color: $lemon;
@@ -42,7 +80,31 @@ header.wrapper {
 	}
 }
 
- 
+.btn-register {
+  margin-bottom: 60px;
+  display: block;
+}
+
 .disabled-link, .disabled-link:hover {
 	color: $lightgray;
+}
+
+.bg-watermelon {
+  background: #fff url('#{$imgpath}/bg_watermelon.png') repeat;
+/*   background-size: 800px auto;  */
+}
+
+.bg-pineapples {
+  background: #fff url('#{$imgpath}/bg_pineapples.png') repeat;
+/*   background-size: 60%;  */
+}
+
+.bg-strawberries {
+  background: #fff url('#{$imgpath}/bg_strawberries.png') repeat;
+/*   background-size: 70%;  */
+}
+
+.bg-bananas {
+  background: #fff url('#{$imgpath}/bg_bananas.png') repeat;
+/*   background-size: 60%;  */
 }

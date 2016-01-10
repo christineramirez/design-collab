@@ -1,778 +1,121 @@
-/*
-@include bp1 { // > 340px < 767px 
-  .header-container {
-    background-size: auto 360px;
+@include bp2 { // tablet
+
+  #dc-logo-lg {
+  	width: 100%;
+    height: 60%;
+    background-size: 50%;
+    background-position: center 60%;
+    float: none;
+    display: block;
+    position: relative;
   }
 
-  header.wrapper {
-    height: 360px;
-  }  
-
-  #cr-logo { 
-    margin-top: 10px;
-  }
-
-  .title {
+  #dc-mission {
+    float: none;
+    height: 20%;
     width: 100%;
-  }
 
-  .cr-whois {
-    padding: 60px $mobile-buffer 45px;
-
-    p {
-      width: 95%;
+    .valign {
       text-align: justify;
-    }    
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  .cr-avatar {
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-    background-size: 100% auto;
-  }
-
-  .services {
-    @include flexwrap(wrap);
-
-    h4 {
-    	display: inline-block;
-      font-family: $font-sans-header;
-      font-size: 16px;    
-      font-weight: normal;
-    	margin: 0;
-    	padding: 12px 0 10px;
-    	width: 100%;
+      padding: 3% 20%;
+      font-size: 2rem;
     }
 
-    ul {
-      @include flexwrap(wrap);
-      line-height: 1.25em;
-      padding-bottom: 10px;
-      width: 100%;
-    }
-
-    li {
-      width: 100%;
-      padding: 5px 0;
-      border-top: 1px solid lighten($deep-purple, 25);
-    }
-    
-    li:after {
-			display: none;
-		} 
-  }
-
-  .cover-case-study {
-    height: 175px;
-    padding: 20px;
-
-    .cs-logo {
-      margin-bottom: 15px;
-      
-      img {
-        width: auto;
-        height: 20px;
-      }
+    .valign p {
+      margin-bottom: 1rem;
     }
   }
 
-  .visualizer:before, .learnlink:before, 
-  .tradeshowres:before, .avalanchenext:before {
-    background-size: auto auto;
-  }
+  .event-wrapper {
 
-  .testimonials {
-
-    cite {
-      margin-top: 30px;
-      @include flexwrap(wrap);
-      @include flexDirection(column-reverse);
-
-      img {
-        padding: 3px 20px 5px;
-        margin: 10px 20px;
-        border: none;
-      }
-      
-      p {
-        font-family: $font-serif-body;
-        font-size: 14px;
-        margin: 0 10px;
-      }
-    } 
-
-    blockquote {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      text-align: justify;    
-    }  
-  }
-
-  footer {
-    @include flexwrap(wrap);
-    padding: 0;
-    
-    .lady-with-sloth {
-      margin: 0;      
-      background-size: 100%;
-      width: 150px;
-      height: 150px;
-    }
-
-    .contact-info {
-      width: 100%;
-      padding: 0;
-    }
-    
-    .contact-info h3 {
-      margin: 20px 0;
-    }
-  }
-
-  .footer-container {
-    padding: 30px 0;
-  }  
-
-  .fine-print {
-    @include flexwrap(wrap);
-    @include justifyContent(center);
-    @include justifyContent(center);
-    @include alignSelf(center);   
-
-    .elsewhere {
-      width: 100%;
-      @include justifyContent(center); 
-      margin: 10px 0 20px;      
-    }
-
-    small {
-      text-align: center;
-      @include flexIt(flex-grow 1); 
-    }
-
-    a {
-      text-align: center;
-    }
-
-    a:last-child {
-      margin: 0;
-    }
-  }
-
-  .case-studies  {
-  
-    nav {
-    	@include justifyContent(space-between);
-    	margin-top: 30px;
-    	padding: 0 10px;
-    }
-    
-    h6.subtitle {
-      width: 18em; 
-    }
-
-    .subhead-container {
-      @include flexDirection(column-reverse);
-      padding-bottom: 0;
-    }
-
-    .cs-desc, .cs-roles {
-      margin: 0;
-    }
-
-    .cs-desc {
-      text-align: justify;
-      width: calc(100% - #{$dbl-mobile-buffer});
-		  margin: 0;
-		  padding: 0 $mobile-buffer;
-    }
-
-    .cs-roles p, .cs-roles h5 {
-      text-align: center;
-      width: 100%;
-    }
-
-    h3 {
-      width: auto;
-      margin: 45px $mobile-buffer $mobile-buffer;
-      padding: 0;
-    }
-  }
-
-  #cs-smart {
-    .combo-box {
-      @include flexwrap(wrap);
-
-      img {
-        width: 95%;
-      }
-
-      .fa-plus {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 100%;
-      }
-
-      .sticky-note {
-        width: 42px;
-        height: 42px;
-        bottom: 0;
-        right: 20px;
-      }
-
-      .sticky-note p {
-        top: -5px;
-        left: -11px; 
-        width: 68px;
-        font-size: 11px;
-      }
-    }
-  }
-
-  .chrome, .smart-admin .chrome {
-    background-size: 100%;
-    background-position: top left;
-    width: 90%;
-    height: auto;
-    padding-top: 4.25%;
-    float: none;
-
-    figure {
-      width: 100%;
-      text-align: center;
-    }
-    
-    img {
+    p, hr {
       width: 100%
-    }
-  }
-
-  .link-sitemap .right-img  {
-    width: 90%;
-    height: auto;
-    float: none;
-    margin: auto;
-    
-    img {
-      width: 90%
-    }
-  } 
-
-  .smart-admin, #cs-mblink .link-sitemap {
-    @include flexwrap(wrap);
-    padding: 45px 0 90px;
-
-    .left-details {
-      padding-bottom: 40px;
-    }
-
-    .left-details h3 {
-      text-align: center;
-    }
-
-    .left-details p {
-      text-align: justify;
-      width: auto;
-      margin-left: $mobile-buffer;
-      margin-right: $mobile-buffer;
-      padding-left: $mobile-buffer;
-      padding-right: $mobile-buffer;
-    }
-  }
-
-  #cs-mbviz {
-    .header-container {
-      background-position: center 200px;
-    }
-
-    .mbviz-sitemap { 
-      @include justifyContent(center);  
-      padding: 45px $mobile-buffer;
-      @include flexwrap(wrap);
-      @include flexDirection(column);
-
-      .left-details {
-        color: $deep-purple;
-        text-align: align;
-        padding-top: 8%;
-        padding-left: 0;
-
-        h3 {
-          text-align: center;
-        }
-
-        p {
-          text-align: justify;
-        }
-      } 
-    }
-
-    .cs-details img {
-      width: 85%;
-    }
-
-    .asset-prod { 
-      @include flexDirection(column);
-      padding: 60px $mobile-buffer;
-
-      img {
-        width: 60%;
-        height: 60%;
-        margin-bottom: $dbl-mobile-buffer;        
-      }
-
-      .right-details {
-        text-align: justify;
-        margin-left: 0;
-
-        h3 {
-          text-align: center;
-        }
-
-        p {
-          width: 100%;
-        }  
-      } 
-    }
-
-    .cs-lessons h3 span {
-      margin-bottom: 60px;
-    }
-
-    .txt-cols {
-      @include flexwrap(wrap);
-      margin-bottom: 50px;
-
-      p {
-        position: relative;
-        width: 100%;
-        margin: 0 $mobile-buffer 60px;
-      }
-
-      p:before {
-        font-size: 210px;
-        line-height: .6em;
-      }
-    }
-  }
-
-  #cs-avnext {
-    .sketch-avnext { 
-      @include flexwrap(wrap);
-      @include flexDirection(column);
-      padding: 45px 0;
-
-      .left-details h3 {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      .left-details {
-        @include flexIt(1);
-        text-align: justify;
-        padding: 0 $dbl-mobile-buffer;
-        margin: 0;
-      }
-
-      .right-img {
-        @include flexIt(1);
-      }
-  
-      figure img {
-        margin-top: 30px;
-        width: calc(100% - #{$dbl-mobile-buffer});
-      }  
-    }
-
-    .cs-details {
-      padding: 0 20px 45px;
-
-      .chrome {
-        width: 100%;
-        height: auto;
-      } 
-
-      .zoom-detail {
-        right: -10px;
-        top: -10px;
-      }
-
-      .zoom-detail img {
-        width: 100px;
-        height: 100px;
-      }
-
-      h3 {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }  
-
-    .asset-prod { 
-      @include flexwrap(wrap);
-      @include flexDirection(column-reverse);
-      padding: 45px $mobile-buffer;
-      background-size: 100% auto;
-
-      .left-img {
-        @include flexIt(1);
-      }
-
-      .chrome {
-        width: 100%;
-        height: auto; 
-        margin-top: 20px;
-      }
-
-      .right-details {
-        text-align: justify;
-        @include flexIt(1);
-
-        h3 {
-          text-align: center;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-        } 
-
-        p {
-          padding: 0 $mobile-buffer;;
-        }
-      }
-    }
-
-    .cs-docs {
-      .row img, .add-shadow img {
-        width: 90%;
-        margin-bottom: 20px;
-      }
     }
   }
 }
 
-@include bp2 { // > 768px < 1024px 
-  .header-container {
-    background-size: auto 400px;
+@include bp1 { // phone
+
+  #dc-logo-lg {
+  	width: 100%;
+    height: 50%;
+    background-size: 65%;
+    background-position: center;
+    float: none;
   }
 
-  header.wrapper {
-    height: 400px;
+  #dc-mission {
+    float: none;
+    height: 50%;
+    width: 100%;
+
+    .valign {
+      text-align: justify;
+      padding: 5% 15%;
+      font-size: 1.5rem;
+    }
+
+    .valign p {
+      margin-bottom: 1rem;
+    }
   }
 
-  .title {
-    width: 95%;
-    margin-top: 12%;
-  }
-
-  .cr-whois {
-
-    padding-top: 60px;
-
-    p {
-      width: 80%;
-    }    
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  .services {    
+  .event-wrapper {
     @include flexwrap(wrap);
-    margin: 0;
 
-    h4 {
+    .speaker-info {
+      width: 100%;
+      margin: 0 0 3rem 0;
+      @include flexbox;
+      @include justifyContent(center);
+    }
+
+    .speaker-info img {
+      width: 120px;
+      height: 120px;
+
+    }
+
+    .speaker-elsewhere {
       display: none;
     }
 
-
-    ul {
+    .event-info {
       width: 100%;
+      margin: 0 10%;
     }
 
-    li {
-      @include flexIt(flexgrow 1);
+    .event-info h3 {
+      font-size: 2.75rem;
+      text-align: center;
+    }
+
+    .event-info h4 {
+      text-align: center;
+    }
+
+    .event-info h5 {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    p, hr {
       width: 100%;
-      padding: 10px 0;
-    }
-    
-    li:after {
-    	display: none;
+      font-size: 1.5rem;
     }
   }
 
-  .cover-case-study {
-    height: 175px;
-    padding: 20px;
-
-    .cs-logo {
-      margin-bottom: 15px;
-      
-      img {
-        width: auto;
-        height: 20px;
-      }
-    }
+  .share-yours {
+    padding: 6rem 10%;
+    text-align: justify;
   }
 
-  .testimonials blockquote {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-  footer {
-    @include flexwrap(wrap);
-    
-    .lady-with-sloth {
-      margin: 0;
-    }
-
-    .contact-info {
-      width: 100%;
-      padding: 0;
-    }
-  }
-
-  .case-studies .cs-desc {
-    margin: 0;
-    padding: 0 20px 0 0;
-    @include flexIt(2);
-  }
-
-  .case-studies .cs-roles {
-    margin: 0;
-    padding: 0;
-    @include flexIt(1);
-  }
-
-  #cs-smart {
-    .combo-box {
-
-      img {
-        width: 95%;
-      }
-
-      .fa-plus {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-
-      .sticky-note {
-        width: 42px;
-        height: 42px;
-        bottom: 0;
-        right: 20px;
-      }
-
-      .sticky-note p {
-        top: -5px;
-        left: -11px; 
-        width: 68px;
-        font-size: 11px;
-      }
-    }
-  }
-
-  .chrome, .smart-admin .chrome {
-    background-size: 100%;
-    background-position: top left;
-    width: 90%;
-    height: auto;
-    padding-top: 3.5%;
-    float: none;
-    
-    img {
-      width: 100%
-    }
-  }
-
-  .link-sitemap .right-img  {
+  .share-yours p {
     width: 100%;
-    height: auto;
-    float: none;
-    
-    img {
-      width: 90%
-    }
-  } 
-
-  .smart-admin, #cs-mblink .link-sitemap {
-    padding-left: 0;
-    padding-right: 0;
-
-    .left-details {
-      padding: 0 40px 40px;
-      @include flexIt(1);
-    }
-
-    .right-img {
-      @include flexIt(1);
-      padding-right: 20px;
-    }
-
-    .left-details p {
-      text-align: justify;
-      width: auto;
-    }
-  }
-  
-  .tv-frame {
-    width: 90%;
+    font-size: 1.5rem;
   }
 
-  #cs-mbviz {
-    .mbviz-sitemap { 
-      padding: 45px;
-
-      .left-details {
-        padding-top: 5%;
-        padding-left: 5%;
-      }       
-    }
-    
-    .asset-prod { 
-      padding: 60px 0;
-
-      img {
-        @include flexIt(1);
-        width: 75%;
-        height: 75%;
-      }
-
-      .right-details {      
-        @include flexIt(2);
-        margin-left: 0;
-
-        p {
-          width: auto;
-          padding-right: $dbl-mobile-buffer;
-        }  
-      } 
-    }
-  }
-
-  #cs-avnext {
-    .sketch-avnext { 
-      @include flexDirection(row-reverse);
-      padding: 90px 30px;
-
-      .left-details h3 {
-        padding: 0;
-      }
-
-      .left-details {
-        @include flexIt(1);
-        padding: 0 0 0 20px;
-      }
-
-      .right-img {
-        @include flexIt(1);
-      }
-  
-      figure img {
-        width: 95%;
-      }  
-    }
-
-    .cs-details {
-      padding: 0 20px 90px;
-
-      .chrome {
-        max-width: 600px;
-        height: auto;
-      } 
-
-      .chrome img {
-        max-width: 600px;
-      }
-
-      .zoom-detail img {
-        max-width: 186px;
-        max-height: 186px;
-      }
-
-      h3 {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }  
-
-    .asset-prod { 
-      @include alignContent(flex-start);
-      padding: 90px 20px 90px;
-      background-size: 100% auto;
-
-      .left-img {
-        @include flexIt(1);
-      }
-
-      .chrome {
-        width: 100%;
-        height: 260px; 
-      }
-
-      .chrome img {
-        margin-top: -2px;
-      }
-
-      .right-details {
-        text-align: left;
-        @include flexIt(1);
-        padding-left: 30px;
-      }
-    }
-
-    .cs-docs {
-      .row img, .add-shadow img {
-        width: auto;
-        margin-bottom: 20px;
-      }
-    }
-  }  
-}
-
-@include bp3 { // > 1025px
-
-  .wrapper {// max width
-      width: 1026px; //1140px - 10% for margins
-      margin: 0 auto;
-  }
-
-  .testimonials blockquote {
-    width: 50%;
+  .special-thanks {
+    background-size: 35rem;
   }
 }
-*/

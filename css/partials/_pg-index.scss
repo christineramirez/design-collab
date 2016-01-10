@@ -1,0 +1,161 @@
+h2 {
+  margin-top: 8rem;
+}
+
+#dc-logo-lg {
+	float: left;
+	width: 50%;
+	height: 100%;
+  background: $lagoon-blue url('#{$imgpath}/logo_designcollab.svg') no-repeat center 50%;
+  background-size: 67%;
+}
+
+.section {
+  z-index: 100;
+}
+
+#dc-mission {
+  float: right;
+  height: 100%;
+  background-color: $egg-shell;
+  display: table;
+  width: 50%;
+
+  .valign {
+    margin: auto;
+    padding: 0 20%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+
+  i {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.event-wrapper {
+  @include flexbox;
+  @include flexwrap(nowrap);
+  @include justifyContent(center);
+  padding: 60px 0;
+}
+
+.speaker-info {
+  margin-right: 3rem;
+
+  img {
+    @include rounded(50%);
+    margin-bottom: 5px;
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.event-info {
+  margin-left: 15px;
+  width: 45%;
+
+  h3 {
+    margin: 0;
+    font-weight: $normal;
+
+    span {
+      font-style: italic;
+      color: $lagoon-blue;
+    }
+  }
+
+  h3.tbd-event {
+    color: $lightgray;
+  }
+
+  p {
+    text-align: justify;
+    width: 85%;
+  }
+
+  hr {
+    width: 85%;
+  }
+
+  h5 {
+    margin: 0;
+  }
+
+  h4 a {
+    font-weight: $bold;
+  }
+}
+
+.speaker-elsewhere {
+  text-align: center;
+  @include flexbox();
+  @include justifyContent(space-around);
+
+  a {
+  color: $lightgray;
+
+    &:hover {
+      color: $fresh-lawn;
+    }
+
+    i {
+      margin-right: 0;
+    }
+  }
+}
+
+.share-yours {
+  background-color: lighten($teal, 30%);
+  padding: 6rem 0;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 20px 0;
+  }
+
+  p {
+    width: 40rem;
+    margin: 1rem auto 1rem;
+  }
+
+  a {
+    color: darken($lagoon-blue, 20%);
+  }
+
+  a:hover {
+    color: $darkgray;
+  }
+}
+
+.special-thanks {
+  padding: 12rem 0 12rem;
+  background: $darkgray url('#{$imgpath}/bg_heart.svg') no-repeat center;
+  background-size: 40rem;
+  text-align: center;
+
+  h2 {
+    width: 25rem;
+    margin: 1rem auto 1rem;
+    color: $pink-love;
+  }
+
+  .friends-list {
+    @include flexbox();
+    @include justifyContent(space-around);
+  }
+
+  li {
+    margin-bottom: .5rem;
+  }
+
+  hr {
+    display: block;
+    border-top: 2px solid $pink-love;
+    margin: 0;
+  }
+
+}

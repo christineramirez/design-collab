@@ -1,3 +1,67 @@
+html {
+  font-size: 62.5%;
+  line-height: 1.4; }
+
+h1, h2, h4 {
+  font-family: "soleil", Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 1.25; }
+
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 400; }
+
+h3 {
+  font-size: 3.6rem;
+  font-family: "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  line-height: 1.15; }
+
+h4 {
+  font-size: 1.6rem;
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic; }
+
+body {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-size: 1.6rem; }
+
+i {
+  margin-right: 8px; }
+
+.strong {
+  font-weight: 600; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ul.diamond {
+  margin: 0;
+  padding: 0 1em;
+  list-style: none; }
+  ul.diamond li:before {
+    position: relative;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border: 1px solid #8FBE00;
+    left: -1em;
+    top: 0.9em; }
+
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 ::-moz-selection {
   background: #f3ea41;
@@ -13,7 +77,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgba(185, 185, 185, 0.3);
+  border-top: 1px solid rgba(140, 140, 140, 0.3);
   margin: 1em 0;
   padding: 0; }
 
@@ -45,36 +109,66 @@ textarea {
 a {
   text-decoration: none; }
 
+body {
+  background-color: #fdfbf7;
+  line-height: 1.5; }
+
+.sticky-guy {
+  z-index: 50;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: 0.2s top cubic-bezier(0.3, 0.73, 0.3, 0.74); }
+  .sticky-guy .dc-logo-sm {
+    background-color: #00A8C6;
+    width: 50%;
+    float: left;
+    height: 100%; }
+    .sticky-guy .dc-logo-sm img {
+      margin: 2rem auto 0; }
+  .sticky-guy .meetup {
+    background-color: #F9F2E7;
+    width: 50%;
+    float: left;
+    height: 100%; }
+    .sticky-guy .meetup a {
+      display: block;
+      font-weight: normal;
+      color: #101010;
+      font-size: 1.4rem;
+      line-height: 6rem;
+      width: 100%;
+      height: 100%; }
+    .sticky-guy .meetup a:hover {
+      color: #00A8C6; }
+    .sticky-guy .meetup i {
+      margin: 0 0 0 1rem; }
+
 .wrapper {
   width: 90%;
   margin: 0 5%; }
 
-header.wrapper {
-  height: 550px; }
-
-#home .main-container {
-  background-color: #101010;
-  color: #fff; }
-
-.main {
-  padding: 30px 0; }
-
-#cr-logo {
-  display: block;
-  background: url("../img/logo-cr-white.svg") no-repeat;
-  width: 46px;
-  height: 46px;
-  margin: 30px auto 0; }
+a {
+  color: #8FBE00;
+  font-style: italic; }
+  a:hover {
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    color: #00A8C6; }
 
 .btn-primary {
-  border: 2px solid #ccc;
+  border: 2px solid gold;
   background-color: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 8px 20px;
   font-size: 13px;
-  color: #ccc;
+  color: gold;
   text-decoration: none;
   transition: background 0.25s ease-in-out;
   -moz-transition: background 0.25s ease-in-out;
@@ -86,58 +180,156 @@ header.wrapper {
   .btn-primary:active {
     background-color: #dacf0e; }
 
+.btn-register {
+  margin-bottom: 60px;
+  display: block; }
+
 .disabled-link, .disabled-link:hover {
-  color: #b9b9b9; }
+  color: #8c8c8c; }
 
-html {
-  font-size: 1em;
-  line-height: 1.4; }
+.bg-watermelon {
+  background: #fff url("../img/bg_watermelon.png") repeat;
+  /*   background-size: 800px auto;  */ }
 
-h1, h2, h3, h4 {
-  font-family: "soleil", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
+.bg-pineapples {
+  background: #fff url("../img/bg_pineapples.png") repeat;
+  /*   background-size: 60%;  */ }
 
-h1 {
-  font-size: 42px;
-  line-height: 1.25; }
+.bg-strawberries {
+  background: #fff url("../img/bg_strawberries.png") repeat;
+  /*   background-size: 70%;  */ }
+
+.bg-bananas {
+  background: #fff url("../img/bg_bananas.png") repeat;
+  /*   background-size: 60%;  */ }
 
 h2 {
-  font-size: 28px; }
+  margin-top: 8rem; }
 
-h3 {
-  font-size: 24px; }
+#dc-logo-lg {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: #00A8C6 url("../img/logo_designcollab.svg") no-repeat center 50%;
+  background-size: 67%; }
 
-h4 {
-  font-size: 16px;
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif; }
+.section {
+  z-index: 100; }
 
-body {
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+#dc-mission {
+  float: right;
+  height: 100%;
+  background-color: #F9F2E7;
+  display: table;
+  width: 50%; }
+  #dc-mission .valign {
+    margin: auto;
+    padding: 0 20%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2.2rem;
+    line-height: 1.5; }
+  #dc-mission i {
+    width: 100%;
+    text-align: center; }
+
+.event-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 60px 0; }
+
+.speaker-info {
+  margin-right: 3rem; }
+  .speaker-info img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    width: 110px;
+    height: 110px; }
+
+.event-info {
+  margin-left: 15px;
+  width: 45%; }
+  .event-info h3 {
+    margin: 0;
+    font-weight: 400; }
+    .event-info h3 span {
+      font-style: italic;
+      color: #00A8C6; }
+  .event-info h3.tbd-event {
+    color: #8c8c8c; }
+  .event-info p {
+    text-align: justify;
+    width: 85%; }
+  .event-info hr {
+    width: 85%; }
+  .event-info h5 {
+    margin: 0; }
+  .event-info h4 a {
+    font-weight: 700; }
+
+.speaker-elsewhere {
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+  .speaker-elsewhere a {
+    color: #8c8c8c; }
+    .speaker-elsewhere a:hover {
+      color: #8FBE00; }
+    .speaker-elsewhere a i {
+      margin-right: 0; }
+
+.share-yours {
+  background-color: #b8e8ec;
+  padding: 6rem 0;
   text-align: center; }
+  .share-yours h2 {
+    margin: 0 0 20px 0; }
+  .share-yours p {
+    width: 40rem;
+    margin: 1rem auto 1rem; }
+  .share-yours a {
+    color: #005160; }
+  .share-yours a:hover {
+    color: #222; }
 
-i {
-  margin-right: 8px; }
-
-.strong {
-  font-weight: 600; }
-
-ul.diamond {
-  margin: 0;
-  padding: 0 1em;
-  list-style: none; }
-  ul.diamond li:before {
-    position: relative;
-    content: "";
+.special-thanks {
+  padding: 12rem 0 12rem;
+  background: #222 url("../img/bg_heart.svg") no-repeat center;
+  background-size: 40rem;
+  text-align: center; }
+  .special-thanks h2 {
+    width: 25rem;
+    margin: 1rem auto 1rem;
+    color: #EB8787; }
+  .special-thanks .friends-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around; }
+  .special-thanks li {
+    margin-bottom: .5rem; }
+  .special-thanks hr {
     display: block;
-    height: 4px;
-    width: 4px;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    border: 1px solid #8FBE00;
-    left: -1em;
-    top: 0.9em; }
+    border-top: 2px solid #EB8787;
+    margin: 0; }
 
 .hidden {
   display: none !important;
@@ -176,781 +368,98 @@ ul.diamond {
 .clearfix {
   *zoom: 1; }
 
-/*
-@include bp1 { // > 340px < 767px 
-  .header-container {
-    background-size: auto 360px;
-  }
+.normal {
+  font-weight: 400; }
 
-  header.wrapper {
-    height: 360px;
-  }  
+.italic {
+  font-style: italic; }
 
-  #cr-logo { 
-    margin-top: 10px;
-  }
+.clear-margin-top {
+  margin-top: 0; }
 
-  .title {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #dc-logo-lg {
     width: 100%;
-  }
-
-  .cr-whois {
-    padding: 60px $mobile-buffer 45px;
-
-    p {
-      width: 95%;
-      text-align: justify;
-    }    
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  .cr-avatar {
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-    background-size: 100% auto;
-  }
-
-  .services {
-    @include flexwrap(wrap);
-
-    h4 {
-    	display: inline-block;
-      font-family: $font-sans-header;
-      font-size: 16px;    
-      font-weight: normal;
-    	margin: 0;
-    	padding: 12px 0 10px;
-    	width: 100%;
-    }
-
-    ul {
-      @include flexwrap(wrap);
-      line-height: 1.25em;
-      padding-bottom: 10px;
-      width: 100%;
-    }
-
-    li {
-      width: 100%;
-      padding: 5px 0;
-      border-top: 1px solid lighten($deep-purple, 25);
-    }
-    
-    li:after {
-			display: none;
-		} 
-  }
-
-  .cover-case-study {
-    height: 175px;
-    padding: 20px;
-
-    .cs-logo {
-      margin-bottom: 15px;
-      
-      img {
-        width: auto;
-        height: 20px;
-      }
-    }
-  }
-
-  .visualizer:before, .learnlink:before, 
-  .tradeshowres:before, .avalanchenext:before {
-    background-size: auto auto;
-  }
-
-  .testimonials {
-
-    cite {
-      margin-top: 30px;
-      @include flexwrap(wrap);
-      @include flexDirection(column-reverse);
-
-      img {
-        padding: 3px 20px 5px;
-        margin: 10px 20px;
-        border: none;
-      }
-      
-      p {
-        font-family: $font-serif-body;
-        font-size: 14px;
-        margin: 0 10px;
-      }
-    } 
-
-    blockquote {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      text-align: justify;    
-    }  
-  }
-
-  footer {
-    @include flexwrap(wrap);
-    padding: 0;
-    
-    .lady-with-sloth {
-      margin: 0;      
-      background-size: 100%;
-      width: 150px;
-      height: 150px;
-    }
-
-    .contact-info {
-      width: 100%;
-      padding: 0;
-    }
-    
-    .contact-info h3 {
-      margin: 20px 0;
-    }
-  }
-
-  .footer-container {
-    padding: 30px 0;
-  }  
-
-  .fine-print {
-    @include flexwrap(wrap);
-    @include justifyContent(center);
-    @include justifyContent(center);
-    @include alignSelf(center);   
-
-    .elsewhere {
-      width: 100%;
-      @include justifyContent(center); 
-      margin: 10px 0 20px;      
-    }
-
-    small {
-      text-align: center;
-      @include flexIt(flex-grow 1); 
-    }
-
-    a {
-      text-align: center;
-    }
-
-    a:last-child {
-      margin: 0;
-    }
-  }
-
-  .case-studies  {
-  
-    nav {
-    	@include justifyContent(space-between);
-    	margin-top: 30px;
-    	padding: 0 10px;
-    }
-    
-    h6.subtitle {
-      width: 18em; 
-    }
-
-    .subhead-container {
-      @include flexDirection(column-reverse);
-      padding-bottom: 0;
-    }
-
-    .cs-desc, .cs-roles {
-      margin: 0;
-    }
-
-    .cs-desc {
-      text-align: justify;
-      width: calc(100% - 30px);
-		  margin: 0;
-		  padding: 0 $mobile-buffer;
-    }
-
-    .cs-roles p, .cs-roles h5 {
-      text-align: center;
-      width: 100%;
-    }
-
-    h3 {
-      width: auto;
-      margin: 45px $mobile-buffer $mobile-buffer;
-      padding: 0;
-    }
-  }
-
-  #cs-smart {
-    .combo-box {
-      @include flexwrap(wrap);
-
-      img {
-        width: 95%;
-      }
-
-      .fa-plus {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 100%;
-      }
-
-      .sticky-note {
-        width: 42px;
-        height: 42px;
-        bottom: 0;
-        right: 20px;
-      }
-
-      .sticky-note p {
-        top: -5px;
-        left: -11px; 
-        width: 68px;
-        font-size: 11px;
-      }
-    }
-  }
-
-  .chrome, .smart-admin .chrome {
-    background-size: 100%;
-    background-position: top left;
-    width: 90%;
-    height: auto;
-    padding-top: 4.25%;
+    height: 60%;
+    background-size: 50%;
+    background-position: center 60%;
     float: none;
+    display: block;
+    position: relative; }
 
-    figure {
-      width: 100%;
-      text-align: center;
-    }
-    
-    img {
-      width: 100%
-    }
-  }
-
-  .link-sitemap .right-img  {
-    width: 90%;
-    height: auto;
+  #dc-mission {
     float: none;
-    margin: auto;
-    
-    img {
-      width: 90%
-    }
-  } 
-
-  .smart-admin, #cs-mblink .link-sitemap {
-    @include flexwrap(wrap);
-    padding: 45px 0 90px;
-
-    .left-details {
-      padding-bottom: 40px;
-    }
-
-    .left-details h3 {
-      text-align: center;
-    }
-
-    .left-details p {
+    height: 20%;
+    width: 100%; }
+    #dc-mission .valign {
       text-align: justify;
-      width: auto;
-      margin-left: $mobile-buffer;
-      margin-right: $mobile-buffer;
-      padding-left: $mobile-buffer;
-      padding-right: $mobile-buffer;
-    }
-  }
+      padding: 3% 20%;
+      font-size: 2rem; }
+    #dc-mission .valign p {
+      margin-bottom: 1rem; }
 
-  #cs-mbviz {
-    .header-container {
-      background-position: center 200px;
-    }
-
-    .mbviz-sitemap { 
-      @include justifyContent(center);  
-      padding: 45px $mobile-buffer;
-      @include flexwrap(wrap);
-      @include flexDirection(column);
-
-      .left-details {
-        color: $deep-purple;
-        text-align: align;
-        padding-top: 8%;
-        padding-left: 0;
-
-        h3 {
-          text-align: center;
-        }
-
-        p {
-          text-align: justify;
-        }
-      } 
-    }
-
-    .cs-details img {
-      width: 85%;
-    }
-
-    .asset-prod { 
-      @include flexDirection(column);
-      padding: 60px $mobile-buffer;
-
-      img {
-        width: 60%;
-        height: 60%;
-        margin-bottom: $dbl-mobile-buffer;        
-      }
-
-      .right-details {
-        text-align: justify;
-        margin-left: 0;
-
-        h3 {
-          text-align: center;
-        }
-
-        p {
-          width: 100%;
-        }  
-      } 
-    }
-
-    .cs-lessons h3 span {
-      margin-bottom: 60px;
-    }
-
-    .txt-cols {
-      @include flexwrap(wrap);
-      margin-bottom: 50px;
-
-      p {
-        position: relative;
-        width: 100%;
-        margin: 0 $mobile-buffer 60px;
-      }
-
-      p:before {
-        font-size: 210px;
-        line-height: .6em;
-      }
-    }
-  }
-
-  #cs-avnext {
-    .sketch-avnext { 
-      @include flexwrap(wrap);
-      @include flexDirection(column);
-      padding: 45px 0;
-
-      .left-details h3 {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      .left-details {
-        @include flexIt(1);
-        text-align: justify;
-        padding: 0 $dbl-mobile-buffer;
-        margin: 0;
-      }
-
-      .right-img {
-        @include flexIt(1);
-      }
-  
-      figure img {
-        margin-top: 30px;
-        width: calc(100% - 30px);
-      }  
-    }
-
-    .cs-details {
-      padding: 0 20px 45px;
-
-      .chrome {
-        width: 100%;
-        height: auto;
-      } 
-
-      .zoom-detail {
-        right: -10px;
-        top: -10px;
-      }
-
-      .zoom-detail img {
-        width: 100px;
-        height: 100px;
-      }
-
-      h3 {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }  
-
-    .asset-prod { 
-      @include flexwrap(wrap);
-      @include flexDirection(column-reverse);
-      padding: 45px $mobile-buffer;
-      background-size: 100% auto;
-
-      .left-img {
-        @include flexIt(1);
-      }
-
-      .chrome {
-        width: 100%;
-        height: auto; 
-        margin-top: 20px;
-      }
-
-      .right-details {
-        text-align: justify;
-        @include flexIt(1);
-
-        h3 {
-          text-align: center;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-        } 
-
-        p {
-          padding: 0 $mobile-buffer;;
-        }
-      }
-    }
-
-    .cs-docs {
-      .row img, .add-shadow img {
-        width: 90%;
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
-
-@include bp2 { // > 768px < 1024px 
-  .header-container {
-    background-size: auto 400px;
-  }
-
-  header.wrapper {
-    height: 400px;
-  }
-
-  .title {
-    width: 95%;
-    margin-top: 12%;
-  }
-
-  .cr-whois {
-
-    padding-top: 60px;
-
-    p {
-      width: 80%;
-    }    
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  .services {    
-    @include flexwrap(wrap);
-    margin: 0;
-
-    h4 {
-      display: none;
-    }
-
-
-    ul {
-      width: 100%;
-    }
-
-    li {
-      @include flexIt(flexgrow 1);
-      width: 100%;
-      padding: 10px 0;
-    }
-    
-    li:after {
-    	display: none;
-    }
-  }
-
-  .cover-case-study {
-    height: 175px;
-    padding: 20px;
-
-    .cs-logo {
-      margin-bottom: 15px;
-      
-      img {
-        width: auto;
-        height: 20px;
-      }
-    }
-  }
-
-  .testimonials blockquote {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-  footer {
-    @include flexwrap(wrap);
-    
-    .lady-with-sloth {
-      margin: 0;
-    }
-
-    .contact-info {
-      width: 100%;
-      padding: 0;
-    }
-  }
-
-  .case-studies .cs-desc {
-    margin: 0;
-    padding: 0 20px 0 0;
-    @include flexIt(2);
-  }
-
-  .case-studies .cs-roles {
-    margin: 0;
-    padding: 0;
-    @include flexIt(1);
-  }
-
-  #cs-smart {
-    .combo-box {
-
-      img {
-        width: 95%;
-      }
-
-      .fa-plus {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-
-      .sticky-note {
-        width: 42px;
-        height: 42px;
-        bottom: 0;
-        right: 20px;
-      }
-
-      .sticky-note p {
-        top: -5px;
-        left: -11px; 
-        width: 68px;
-        font-size: 11px;
-      }
-    }
-  }
-
-  .chrome, .smart-admin .chrome {
-    background-size: 100%;
-    background-position: top left;
-    width: 90%;
-    height: auto;
-    padding-top: 3.5%;
-    float: none;
-    
-    img {
-      width: 100%
-    }
-  }
-
-  .link-sitemap .right-img  {
+  .event-wrapper p, .event-wrapper hr {
+    width: 100%; } }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #dc-logo-lg {
     width: 100%;
-    height: auto;
+    height: 50%;
+    background-size: 65%;
+    background-position: center;
+    float: none; }
+
+  #dc-mission {
     float: none;
-    
-    img {
-      width: 90%
-    }
-  } 
-
-  .smart-admin, #cs-mblink .link-sitemap {
-    padding-left: 0;
-    padding-right: 0;
-
-    .left-details {
-      padding: 0 40px 40px;
-      @include flexIt(1);
-    }
-
-    .right-img {
-      @include flexIt(1);
-      padding-right: 20px;
-    }
-
-    .left-details p {
+    height: 50%;
+    width: 100%; }
+    #dc-mission .valign {
       text-align: justify;
-      width: auto;
-    }
-  }
-  
-  .tv-frame {
-    width: 90%;
-  }
+      padding: 5% 15%;
+      font-size: 1.5rem; }
+    #dc-mission .valign p {
+      margin-bottom: 1rem; }
 
-  #cs-mbviz {
-    .mbviz-sitemap { 
-      padding: 45px;
+  .event-wrapper {
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; }
+    .event-wrapper .speaker-info {
+      width: 100%;
+      margin: 0 0 3rem 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center; }
+    .event-wrapper .speaker-info img {
+      width: 120px;
+      height: 120px; }
+    .event-wrapper .speaker-elsewhere {
+      display: none; }
+    .event-wrapper .event-info {
+      width: 100%;
+      margin: 0 10%; }
+    .event-wrapper .event-info h3 {
+      font-size: 2.75rem;
+      text-align: center; }
+    .event-wrapper .event-info h4 {
+      text-align: center; }
+    .event-wrapper .event-info h5 {
+      text-align: center;
+      margin: 1rem 0; }
+    .event-wrapper p, .event-wrapper hr {
+      width: 100%;
+      font-size: 1.5rem; }
 
-      .left-details {
-        padding-top: 5%;
-        padding-left: 5%;
-      }       
-    }
-    
-    .asset-prod { 
-      padding: 60px 0;
+  .share-yours {
+    padding: 6rem 10%;
+    text-align: justify; }
 
-      img {
-        @include flexIt(1);
-        width: 75%;
-        height: 75%;
-      }
+  .share-yours p {
+    width: 100%;
+    font-size: 1.5rem; }
 
-      .right-details {      
-        @include flexIt(2);
-        margin-left: 0;
-
-        p {
-          width: auto;
-          padding-right: $dbl-mobile-buffer;
-        }  
-      } 
-    }
-  }
-
-  #cs-avnext {
-    .sketch-avnext { 
-      @include flexDirection(row-reverse);
-      padding: 90px 30px;
-
-      .left-details h3 {
-        padding: 0;
-      }
-
-      .left-details {
-        @include flexIt(1);
-        padding: 0 0 0 20px;
-      }
-
-      .right-img {
-        @include flexIt(1);
-      }
-  
-      figure img {
-        width: 95%;
-      }  
-    }
-
-    .cs-details {
-      padding: 0 20px 90px;
-
-      .chrome {
-        max-width: 600px;
-        height: auto;
-      } 
-
-      .chrome img {
-        max-width: 600px;
-      }
-
-      .zoom-detail img {
-        max-width: 186px;
-        max-height: 186px;
-      }
-
-      h3 {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }  
-
-    .asset-prod { 
-      @include alignContent(flex-start);
-      padding: 90px 20px 90px;
-      background-size: 100% auto;
-
-      .left-img {
-        @include flexIt(1);
-      }
-
-      .chrome {
-        width: 100%;
-        height: 260px; 
-      }
-
-      .chrome img {
-        margin-top: -2px;
-      }
-
-      .right-details {
-        text-align: left;
-        @include flexIt(1);
-        padding-left: 30px;
-      }
-    }
-
-    .cs-docs {
-      .row img, .add-shadow img {
-        width: auto;
-        margin-bottom: 20px;
-      }
-    }
-  }  
-}
-
-@include bp3 { // > 1025px
-
-  .wrapper {// max width
-      width: 1026px; //1140px - 10% for margins
-      margin: 0 auto;
-  }
-
-  .testimonials blockquote {
-    width: 50%;
-  }
-}
-*/
+  .special-thanks {
+    background-size: 35rem; } }

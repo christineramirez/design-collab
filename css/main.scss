@@ -1,10 +1,12 @@
-@import "partials/_base.scss"; 
+@import "partials/_base.scss";
 @import "partials/_mixins.scss";
+
+@import "partials/_typography.scss";
 
 @import "partials/_reset.scss";
 @import "partials/_template.scss";
 
-@import "partials/_typography.scss";
+@import "partials/_pg-index.scss";
 
 @import "partials/_helpers.scss";
 @import "partials/_media-queries.scss";
