@@ -6,7 +6,8 @@ h2 {
 	float: left;
 	width: 50%;
 	height: 100%;
-  background: $lagoon-blue url('#{$imgpath}/logo_designcollab_temp.png') no-repeat center; 
+  background: $lagoon-blue url('#{$imgpath}/logo_designcollab.svg') no-repeat center 50%;
+  background-size: 67%;
 }
 
 .section {
@@ -15,24 +16,23 @@ h2 {
 
 #dc-mission {
   float: right;
-  width: 40%;  
   height: 100%;
   background-color: $egg-shell;
   display: table;
-  padding: 0 5%;
-  
+  width: 50%;
+
   .valign {
     margin: auto;
+    padding: 0 20%;
     display: table-cell;
     vertical-align: middle;
     font-size: 2.2rem;
-    line-height: 1.5;    
+    line-height: 1.5;
   }
-  
+
   i {
     width: 100%;
-    text-align: center;   
-    margin-top: 30px;
+    text-align: center;
   }
 }
 
@@ -41,13 +41,11 @@ h2 {
   @include flexwrap(nowrap);
   @include justifyContent(center);
   padding: 60px 0;
-  margin-bottom: 30px;
-
 }
 
 .speaker-info {
-  margin-right: 15px;
-  
+  margin-right: 3rem;
+
   img {
     @include rounded(50%);
     margin-bottom: 5px;
@@ -57,30 +55,37 @@ h2 {
 }
 
 .event-info {
-  margin-left: 15px;  
-  width: 50%;
-  
+  margin-left: 15px;
+  width: 45%;
+
   h3 {
     margin: 0;
     font-weight: $normal;
-    
+
     span {
       font-style: italic;
       color: $lagoon-blue;
-      display: block;
     }
   }
-  
+
+  h3.tbd-event {
+    color: $lightgray;
+  }
+
   p {
-    text-align: justify;    
+    text-align: justify;
     width: 85%;
   }
-  
+
+  hr {
+    width: 85%;
+  }
+
   h5 {
     margin: 0;
   }
-  
-  a {
+
+  h4 a {
     font-weight: $bold;
   }
 }
@@ -89,14 +94,14 @@ h2 {
   text-align: center;
   @include flexbox();
   @include justifyContent(space-around);
-  
+
   a {
   color: $lightgray;
-  
+
     &:hover {
       color: $fresh-lawn;
     }
-    
+
     i {
       margin-right: 0;
     }
@@ -104,28 +109,34 @@ h2 {
 }
 
 .share-yours {
-  border: 3px solid $lagoon-blue;
+  background-color: lighten($teal, 30%);
   padding: 6rem 0;
   text-align: center;
-  margin: 6rem auto;
-  
+
   h2 {
     margin: 0 0 20px 0;
   }
-  
+
   p {
     width: 40rem;
-    margin: 0 auto 2rem;
+    margin: 1rem auto 1rem;
+  }
+
+  a {
+    color: darken($lagoon-blue, 20%);
+  }
+
+  a:hover {
+    color: $darkgray;
   }
 }
 
-
 .special-thanks {
   padding: 12rem 0 12rem;
-  background: $darkgray url('#{$imgpath}/bg_heart.svg') no-repeat center; 
+  background: $darkgray url('#{$imgpath}/bg_heart.svg') no-repeat center;
   background-size: 40rem;
   text-align: center;
-  
+
   h2 {
     width: 25rem;
     margin: 1rem auto 1rem;
@@ -136,20 +147,15 @@ h2 {
     @include flexbox();
     @include justifyContent(space-around);
   }
-  
-  ul {
-
-  }
 
   li {
     margin-bottom: .5rem;
   }
-  
+
   hr {
     display: block;
-    border-top: 2px solid $pink-love;     
+    border-top: 2px solid $pink-love;
     margin: 0;
-    
   }
 
 }
