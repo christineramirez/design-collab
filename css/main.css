@@ -58,9 +58,9 @@ ul.diamond {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    border: 1px solid #8FBE00;
+    border: 1px solid #101010;
     left: -1em;
-    top: 0.9em; }
+    top: 1em; }
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 ::-moz-selection {
