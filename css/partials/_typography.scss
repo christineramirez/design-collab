@@ -9,7 +9,7 @@ h1, h2, h4 {
 
 h1 {
 	font-size: 4.2rem;
-	line-height: 1.25; 
+	line-height: 1.25;
 }
 
 h2 {
@@ -60,15 +60,15 @@ ul.diamond {
 	padding: 0 1em;
 	list-style: none;
 
-	li:before { 
+	li:before {
 		position: relative;
-	  content: "";    
+	  content: "";
 	  display: block;
 	  height: 4px;
-	  width: 4px; 
+	  width: 4px;
 	  @include rotateShape(45deg);
-	  border: 1px solid $fresh-lawn;
+	  border: 1px solid $offblack;
 	  left: -1em;
-	  top: 0.9em;
+	  top: 1em;
 	 }
 }
