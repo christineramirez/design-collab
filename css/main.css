@@ -244,7 +244,8 @@ h2 {
   -webkit-flex-wrap: nowrap;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 60px 0; }
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.3); }
 
 .speaker-info {
   margin-right: 3rem; }
@@ -255,6 +256,38 @@ h2 {
     margin-bottom: 5px;
     width: 110px;
     height: 110px; }
+
+.speaker-info-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  padding: 0;
+  margin: 30px 0; }
+  .speaker-info-row .contain-speaker-info {
+    margin-right: 40px; }
+  .speaker-info-row img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    width: 70px;
+    height: 70px; }
+  .speaker-info-row .speaker-elsewhere {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around; }
 
 .event-info {
   margin-left: 15px;
@@ -279,6 +312,7 @@ h2 {
 
 .speaker-elsewhere {
   text-align: center;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
