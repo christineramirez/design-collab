@@ -457,6 +457,11 @@ h2 {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap; }
+    .event-wrapper .speaker-info-row {
+      -webkit-justify-content: space-between;
+      justify-content: space-between; }
+      .event-wrapper .speaker-info-row .contain-speaker-info {
+        margin: 0; }
     .event-wrapper .speaker-info {
       width: 100%;
       margin: 0 0 3rem 0;
