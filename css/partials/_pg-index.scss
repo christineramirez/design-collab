@@ -41,6 +41,7 @@ h2 {
   @include flexwrap(nowrap);
   @include justifyContent(center);
   padding: 60px 0;
+  border-bottom: 1px solid rgba($lightgray, .3);
 }
 
 .speaker-info {
@@ -59,7 +60,7 @@ h2 {
   width: 45%;
 
   h3 {
-    margin: 0;
+    margin: 0 0 20px 0;
     font-weight: $normal;
 
     span {
@@ -90,8 +91,40 @@ h2 {
   }
 }
 
+.row-layout {
+  padding-left: 135px;
+
+  .speaker-info {
+    @include flexbox;
+    @include flexwrap(nowrap);
+    padding: 0;
+    margin: 30px 0;
+
+
+    .contain-speaker-info {
+      margin-right: 40px;
+    }
+
+    img {
+      @include rounded(50%);
+      margin-bottom: 5px;
+      width: 70px;
+      height: 70px;
+    }
+
+    .speaker-elsewhere {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+      @include flexbox();
+      @include justifyContent(space-around);
+    }
+  }
+}
+
 .speaker-elsewhere {
   text-align: center;
+  margin-bottom: 40px;
   @include flexbox();
   @include justifyContent(space-around);
 

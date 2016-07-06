@@ -63,6 +63,7 @@
   .event-wrapper {
     @include flexwrap(wrap);
 
+
     .speaker-info {
       width: 100%;
       margin: 0 0 3rem 0;
@@ -73,7 +74,6 @@
     .speaker-info img {
       width: 120px;
       height: 120px;
-
     }
 
     .speaker-elsewhere {
@@ -102,6 +102,27 @@
     p, hr {
       width: 100%;
       font-size: 1.5rem;
+    }
+  }
+
+  .row-layout {
+    padding-left: 0;
+
+    .speaker-info {
+      @include justifyContent(space-between);
+
+      .contain-speaker-info {
+        margin: 0;
+      }
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      ul.speaker-elsewhere {
+        display: none;
+      }
     }
   }
 

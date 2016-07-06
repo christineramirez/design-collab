@@ -56,8 +56,7 @@ body {
 }
 
 a {
-  color: $fresh-lawn;
-  font-style: italic;
+  color: $fresh-lawn-darken-3;
 
   &:hover {
     @include transitionEaseIn(color, 0.3s);
