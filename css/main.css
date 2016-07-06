@@ -22,7 +22,8 @@ h3 {
 h4 {
   font-size: 1.6rem;
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0; }
 
 h5 {
   font-size: 1.6rem;
@@ -152,8 +153,7 @@ body {
   margin: 0 5%; }
 
 a {
-  color: #8FBE00;
-  font-style: italic; }
+  color: #739800; }
   a:hover {
     transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
@@ -257,43 +257,11 @@ h2 {
     width: 110px;
     height: 110px; }
 
-.speaker-info-row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  padding: 0;
-  margin: 30px 0; }
-  .speaker-info-row .contain-speaker-info {
-    margin-right: 40px; }
-  .speaker-info-row img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    margin-bottom: 5px;
-    width: 70px;
-    height: 70px; }
-  .speaker-info-row .speaker-elsewhere {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around; }
-
 .event-info {
   margin-left: 15px;
   width: 45%; }
   .event-info h3 {
-    margin: 0;
+    margin: 0 0 20px 0;
     font-weight: 400; }
     .event-info h3 span {
       font-style: italic;
@@ -309,6 +277,40 @@ h2 {
     margin: 0; }
   .event-info h4 a {
     font-weight: 700; }
+
+.row-layout {
+  padding-left: 135px; }
+  .row-layout .speaker-info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    padding: 0;
+    margin: 30px 0; }
+    .row-layout .speaker-info .contain-speaker-info {
+      margin-right: 40px; }
+    .row-layout .speaker-info img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin-bottom: 5px;
+      width: 70px;
+      height: 70px; }
+    .row-layout .speaker-info .speaker-elsewhere {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-around;
+      justify-content: space-around; }
 
 .speaker-elsewhere {
   text-align: center;
@@ -457,11 +459,6 @@ h2 {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap; }
-    .event-wrapper .speaker-info-row {
-      -webkit-justify-content: space-between;
-      justify-content: space-between; }
-      .event-wrapper .speaker-info-row .contain-speaker-info {
-        margin: 0; }
     .event-wrapper .speaker-info {
       width: 100%;
       margin: 0 0 3rem 0;
@@ -491,6 +488,19 @@ h2 {
     .event-wrapper p, .event-wrapper hr {
       width: 100%;
       font-size: 1.5rem; }
+
+  .row-layout {
+    padding-left: 0; }
+    .row-layout .speaker-info {
+      -webkit-justify-content: space-between;
+      justify-content: space-between; }
+      .row-layout .speaker-info .contain-speaker-info {
+        margin: 0; }
+      .row-layout .speaker-info img {
+        width: 70px;
+        height: 70px; }
+      .row-layout .speaker-info ul.speaker-elsewhere {
+        display: none; }
 
   .share-yours {
     padding: 6rem 10%;

@@ -2,6 +2,8 @@
 $lagoon-blue: #00A8C6;
 $egg-shell: #F9F2E7;
 $fresh-lawn: #8FBE00;
+$fresh-lawn-darken-3: #739800;
+$fresh-lawn-darken-4: #658500;
 $teal: #40c0cb;
 
 $pink-love: #EB8787;
@@ -20,12 +22,12 @@ $font-serif-body: "ff-tisa-web-pro", Georgia, Times, serif;
 
 //Font weights
 $normal: 400;
-$semi-bold: 600; 
-$bold: 700; 
+$semi-bold: 600;
+$bold: 700;
 
 // Image path
 $imgpath: '../img';
 
 // Left and right margins for text on mobile
-$mobile-buffer: 15px; 
+$mobile-buffer: 15px;
 $dbl-mobile-buffer: $mobile-buffer * 2;
